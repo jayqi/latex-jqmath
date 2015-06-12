@@ -1,0 +1,41 @@
+% jqmath.tex  -  defines useful macros for math typesetting
+%
+% Required packages: amsmath, amssymb, mathtools
+%
+% Author: 			Jay Y. Qi
+% Last modified:	March 11, 2015
+
+% Parentheses and brackets
+\DeclarePairedDelimiter\paren{(}{)}
+\DeclarePairedDelimiter\sbrack{[}{]}
+\DeclarePairedDelimiter\cbrack{\{}{\}}
+\DeclarePairedDelimiter\abrack{\langle}{\rangle}
+
+% Number sets
+\newcommand{\realset}{\mathbb{R}}
+\newcommand{\complexset}{\mathbb{C}}
+\newcommand{\integerset}{\mathbb{Z}}
+\newcommand{\rationalset}{\mathbb{Q}}
+
+% Real and imaginary operators (redefine with roman letters)
+\let\Re\relax
+\let\Im\relax
+\DeclareMathOperator{\Re}{Re}
+\DeclareMathOperator{\Im}{Im}
+
+% Derivatives
+\newcommand{\deriv}[2]{\frac{d#1}{d#2}}
+\newcommand{\pderiv}[2]{\frac{\partial#1}{\partial#2}}
+
+% Vertical bar for evaluated at
+\newcommand{\evalat}[2]{\left. #1 \right\vert_{#2}}
+
+% Norms and inner products (requires math tools)
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+\DeclarePairedDelimiterX\inner[2]{\langle}{\rangle}{#1,#2}
+
+% Symbols
+\let \by \times
+\let \del \nabla
+\newcommand{\given}{\middle\vert}
